@@ -34,8 +34,8 @@ program randomtest
                 write(22,*) n,sigma
 
                 
-                if (n==100) then
-                        open(23,file="scaterdata.dat")
+                if (n==10000) then
+                        open(23,file="scatterdata.dat")
                 ! Scatter plot
                         do i=1,n-1
                                 write(23,*) r(i),r(i+1)
@@ -58,6 +58,22 @@ program randomtest
                                 write(24,*) k,c_k
                        end do
                 end if
+                if (n==100) then
+
+                        open(25,file="correlationdata_small.dat")
+                        do m=1,n/2
+                                k=m-1
+                                sum2=0.0d0
+                                do i=1,n-k
+                                        sum2=sum2+r(i)*r(i+k)
+                                end do
+                                sum2=sum2/real(n-k)
+                                c_k=(sum2-mean**2)/sigma**2
+
+                                write(25,*) k,c_k
+                       end do
+                end if
+
 
                                         
                                 
@@ -65,3 +81,4 @@ program randomtest
        end do
                 
 end program randomtest
+

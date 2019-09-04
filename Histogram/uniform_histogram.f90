@@ -7,8 +7,7 @@ program Uniform
 
       write(*,*) "Enter the value of n"
       read(*,*) n
-      write(*,*) "Enter number of bin"
-      read(*,*) nbin
+      nbin=10
 
       open(21,file="uniform_histogram.dat")
       open(22,file="uniform_data.dat")

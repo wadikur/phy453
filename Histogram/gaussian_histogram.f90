@@ -1,9 +1,12 @@
 program Gaussian
       implicit none
 
-      real*8:: r,gauss
+      real*8:: r,gauss,mu,sigma
       integer, allocatable,dimension(:) ::bin
       integer:: n,i,nbin
+      
+      mu=0.0d0
+      sigma=1.0d0
 
       write(*,*) "Enter the value of n"
       read(*,*) n
@@ -18,11 +21,11 @@ program Gaussian
 
       bin=0
       do i=1,n
-        r=gauss(0.0d0,1.0d0)
+        r=gauss(mu,sigma)
+        write(22,*) r
 
         if (abs(int(r))<=nbin) then
                 bin(int(r))=bin(int(r))+1
-                write(22,*) r
 
         end if
       end do
@@ -39,7 +42,7 @@ end program Gaussian
         
        
 function gauss(mu,sigma) result(y)
-        ! This function generate a random number from a uniform distribution [-1,1]
+        ! This function generate a random number from a gaussian distribution with mean mu and sd sigma
         ! Uses Box Mullar polar form
         real*8:: mu,sigma,y,u,v
 3       call random_number(u)
