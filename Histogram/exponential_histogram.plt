@@ -16,6 +16,7 @@ set xtics min,(max-min)/5,max
 set boxwidth width*0.9
 set style fill solid 0.5 #fillstyle
 set tics out nomirror
+set title "Exponential Histogram"
 set xlabel "x"
 set ylabel "Frequency"
 #count and plot
