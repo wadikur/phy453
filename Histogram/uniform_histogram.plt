@@ -1,5 +1,5 @@
 reset
-n=100 #number of intervals
+n=10 #number of intervals
 max=1. #max value
 min=0. #min value
 width=(max-min)/n #interval width

@@ -58,10 +58,10 @@ program randomtest
                                 write(24,*) k,c_k
                        end do
                 end if
-                if (n==100) then
+                if (n==10000) then
 
                         open(25,file="correlationdata_small.dat")
-                        do m=1,n/2
+                        do m=1,50
                                 k=m-1
                                 sum2=0.0d0
                                 do i=1,n-k

@@ -20,7 +20,7 @@ program Crude
 
       sums=sums/real(n)
       sq_sums=sq_sums/real(n)
-      sd=3.0d0*sqrt(sq_sums-sums**2)
+      sd=3.0d0*sqrt((sq_sums-sums**2)/n)
       results= 3.0d0*sums
       error=actual-results
 
