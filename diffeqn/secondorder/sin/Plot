@@ -90,7 +90,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Thu Oct  3 19:02:48 2019"
+@timestamp def "Mon Oct  7 16:39:47 2019"
 @r0 off
 @link r0 to g0
 @r0 type above
@@ -141,11 +141,11 @@
 @    stack world 0, 0, 0, 0
 @    znorm 1
 @    view 0.150000, 0.150000, 1.150000, 0.850000
-@    title ""
+@    title "Second Order Differential"
 @    title font 0
 @    title size 1.500000
 @    title color 1
-@    subtitle ""
+@    subtitle "d2x/dt2=-sin(x), t=0,x=o.1,v=1.9"
 @    subtitle font 0
 @    subtitle size 1.000000
 @    subtitle color 1
