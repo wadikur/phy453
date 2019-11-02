@@ -2,7 +2,7 @@ program FinitDifference
       implicit none
       real*8::f_y,end_y
       real*8,parameter::dx=0.01d0,f_x=0.0d0,end_x=0.9d0
-      integer,parameter::nop=int((end_x-f_x)/dx)
+      integer,parameter::nop=int((end_x-f_x)/dx)+1
       integer::i,ll,cond
       real*8::x(nop),y(nop),y_old(nop),limit
      real*8,parameter::d1=1.0d0/(2.0d0-10.0d0*dx*dx),d2=(1.0d0-2.5d0*dx)
