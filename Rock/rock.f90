@@ -1,6 +1,7 @@
 PROGRAM RockPaperScisors
   implicit none
-!This program is meant to test random number
+  !This program is meant to test random number
+  !It based on that the optimal strategy for a Rock paper scissor game is to play random
 
   integer::counter,reward1,reward2
   real::player1,player2
