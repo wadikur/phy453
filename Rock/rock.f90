@@ -1,4 +1,4 @@
-program RockPaperScisors
+PROGRAM RockPaperScisors
   implicit none
 
 
