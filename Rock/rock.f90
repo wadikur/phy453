@@ -1,6 +1,6 @@
 PROGRAM RockPaperScisors
   implicit none
-
+!This program is meant to test random number
 
   integer::counter,reward1,reward2
   real::player1,player2
