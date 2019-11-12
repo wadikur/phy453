@@ -1,4 +1,5 @@
 program Fibonacci
+  !calculates the fibboacci sequence
       implicit none
       integer::x,y,z,n
       real::phi_est
