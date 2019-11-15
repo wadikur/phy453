@@ -51,7 +51,7 @@ program Neumann
         end do
       end do
 
-      print*,counter 
+      print*,counter
       if(test==0)exit
 
 
